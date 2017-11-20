@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from './user.service';
 
 @Component({
-    selector: 'userSelector',
-    templateUrl: 'fileName.component.html'
+    selector: 'app-user',
+    templateUrl: 'user.component.html'
+  
 })
 export class UserComponent implements OnInit {
 
-    constructor() { }
+    constructor(private userService: UserService) { }
 
-    ngOnInit() { 
+    ngOnInit() {
 
     }
 
